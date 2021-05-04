@@ -52,10 +52,6 @@ RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
-EOF
-systemctl daemon-reload
-systemctl enable autosett
-
 history -c
 echo "1.2" > /home/ver
 clear
