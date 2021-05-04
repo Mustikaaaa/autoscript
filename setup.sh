@@ -28,20 +28,20 @@ exit 0
 fi
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
-wget https://linkkalian/cf.sh && chmod +x cf.sh && ./cf.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install ssh ovpn
-wget https://linkkalian/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://linkkalian/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/add-sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
-wget https://linkkalian/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://linkkalian/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/add-ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 #installwg
-wget https://linkkalian/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 #install v2ray
-wget http://prem.vpnstores.net/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/ins-vt.sh && chmod +x ins-vt.sh && screen -S v2ray ./ins-vt.sh
 #install L2TP
-wget https://linkkalian/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
-wget https://linkkalian/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/Mustikaaaa/autoscript/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
